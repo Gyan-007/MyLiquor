@@ -1,0 +1,257 @@
+/*CSS Reset*/
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* CSS Variables*/
+:root{
+    --navbar-height: 59px;
+}
+
+/*Navigation Bar & list*/
+#navbar{
+    display: flex;
+    position: sticky;
+    align-items: center;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+#logo{
+    margin: 10px 30px;
+}
+
+#logo img{
+    height: 57px;
+    margin: 3px 6px;
+}
+
+#navbar ul{
+    display: flex;
+    font-family: 'Piedra', cursive;
+}
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: #edf0f0f2;
+    display: block;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 15px;
+}
+#navbar ul li a:hover{
+    color: rgb(62, 149, 175);
+    background-color: whitesmoke;
+}
+
+/*Home section*/
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 530px;
+}
+
+#home::before{
+    content: "";
+    background: url('../asssets/lq3.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 614px;
+    width: 100%;
+    z-index: -1;
+    top: 0px;
+    left: 0px;
+    opacity: 0.45;
+}
+
+#home h1{
+    color: #010104;
+    text-align: center;
+}
+
+#home p{
+    color: #010104;
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+/*Services Section*/
+#services{
+    display: flex;
+    margin: 14px;
+}
+
+#services .box{
+    border: 2px solid #35265c;
+    padding: 34px;
+    margin: 2px 55px;
+    border-radius: 47px;
+    background-color: #ebe6e6;
+    margin-bottom: 20px;
+    transition: background-color 1s ease-in-out;
+}
+
+#services .box:hover{
+    background: url('../asssets/bg3.jpg');
+}
+
+#services .box img{
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p{
+    line-height: 1;
+    font-size: 1.3em;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+/*Client Section*/
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content: "";
+    position: absolute;
+    background: url('../asssets/bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.65;
+}
+
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img{
+    height: 145px;
+}
+
+.client-item{
+    padding: 4px;
+}
+
+/*Contact Section*/
+#contact{
+    position: relative;
+    top: 1px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.65;
+    background: url('../asssets/contact3.jpg') no-repeat center center/cover;
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    margin: 3.5px;
+    border-radius: 9px;
+    font-size: 1.1rem;
+    text-align: center;
+    background-color: #bef8bc;
+    font-family: 'Piedra', cursive;
+}
+
+#contact-box input:hover,
+#contact-box textarea:hover{
+    background-color: white;
+}
+
+#contact-box form{
+    width: 30%;
+}
+
+#contact-box button{
+    display: block;
+    width: 100%;
+    margin: auto;
+}
+
+/*Footer*/
+footer{
+    background: #5d868b;
+    color: black;
+    padding: 9px 20px;
+}
+
+/*Utility Class*/
+.h-primary{
+    font-size: 3.8rem;
+    padding: 1px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+.h-secondary{
+    font-size: 2.4rem;
+    padding: 4px;
+    font-family: 'Tenali Ramakrishna', sans-serif;
+}
+
+.btn {
+    color: #404354;
+    background-color: #a191a5;
+    padding: 6px 20px;
+    margin: 17px;
+    border: 2px solid black;
+    font-family: 'Piedra', cursive;
+    font-size: 1.2rem;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background-color: rgb(80, 168, 106);
+    color: rgb(10, 44, 117);
+}
+
+.text-center{
+    text-align: center;
+}
+
+.text-center a{
+    color: #e80606;
+}
